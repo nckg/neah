@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+var Neah = require('../neah');
+
+var neah = new Neah();
+
+console.log( neah.paragraphs(5) );
