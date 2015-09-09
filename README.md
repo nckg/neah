@@ -16,6 +16,10 @@ or download/clone from here and put `neah.js` somewhere handy.
 
     npm install neah
 
+####Install Globally
+
+    npm install --global neah
+
 Usage
 -----
 ### Web
