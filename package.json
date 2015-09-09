@@ -1,6 +1,6 @@
 {
   "name": "neah",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate Lorum Ipsum text from Arnold Schwarzenegger's exceptional film career",
   "main": "neah.js",
   "bin": {
