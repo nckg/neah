@@ -17,6 +17,31 @@
         background-size: cover;
         -o-background-size: cover;
     }
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.8rem;
+      overflow: auto;
+      font-size: 0.9rem;
+      line-height: 1.45;
+      border-radius: 0.3rem;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+      color: #567482;
+      word-wrap: normal;
+      background-color: #fff;
+      border: solid 1px #dce6f0;
+    }
+    textarea {
+      min-height: 400px;
+    }
+    .btn-primary {
+      background: #159957;
+    }
+    .btn-primary:hover {
+      background: #159957;
+    }
 </style>
   </head>
   <body>
@@ -33,6 +58,20 @@
 <a id="neah" class="anchor" href="#neah" aria-hidden="true"><span class="octicon octicon-link"></span></a>Neah</h1>
 Generate Lorum Ipsum text from Arnold Schwarzenegger's exceptional film career.
 Neah is compatible with web browsers and nodejs.</p>
+
+      <form id="lipsum">
+        <div>
+          <label for="count">How many paragraphs would you like</label>
+          <input type="text" value="5" id="count">
+        </div>
+        <div>
+          <label>Output</label>
+          <textarea id="value"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Neah!</button>
+      </form>
+
+
 
 <h2>
 <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
@@ -87,6 +126,17 @@ console.log(neah.paragraphs(5)); // Generates 5 paragraph
 
     </section>
 
+    <script type="text/javascript" src="neah.js"></script>
+    <script type="text/javascript">
+        var neah = new Neah();
 
+        document.getElementById("lipsum").addEventListener("submit", generate);
+
+        function generate( event ) {
+            event.preventDefault();
+            var count = document.getElementById('count').value;
+            document.getElementById('value').value = neah.paragraphs(count);
+        };
+    </script>
   </body>
 </html>
