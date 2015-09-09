@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Generate Lorum Ipsum text from Arnold Schwarzenegger's exceptional film career",
   "main": "neah.js",
+  "bin": {
+    "neah": "./bin/neah"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
