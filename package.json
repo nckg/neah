@@ -1,6 +1,6 @@
 {
   "name": "neah",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generate Lorum Ipsum text from Arnold Schwarzenegger's exceptional film career",
   "main": "neah.js",
   "bin": {
@@ -19,5 +19,7 @@
     "javascript"
   ],
   "author": "Nick Goris <nickgoris@gmail.be>",
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "http://nckg.github.io/neah/",
+  "bugs": "https://github.com/nckg/neah/issues"
 }
